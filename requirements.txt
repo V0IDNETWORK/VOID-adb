@@ -1,0 +1,47 @@
+# VoidRemote - Core Dependencies
+# Generated for Python 3.12+
+
+# GUI Framework
+PySide6>=6.7.0
+
+# CLI Framework
+click>=8.1.7
+rich>=13.7.0
+
+# ADB Communication
+adb-shell>=0.4.4
+
+# Image Processing (screenshots)
+Pillow>=10.3.0
+
+# System Monitoring
+psutil>=5.9.8
+
+# Settings & Validation
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# Security
+cryptography>=42.0.0
+
+# Platform Paths
+appdirs>=1.4.4
+
+# HTTP (for updates)
+requests>=2.32.0
+
+# Numerical (graphs)
+numpy>=1.26.4
+
+# Clipboard
+pyperclip>=1.8.2
+
+# Development Dependencies (install with: pip install -e ".[dev]")
+# pytest>=8.2.0
+# pytest-asyncio>=0.23.7
+# pytest-cov>=5.0.0
+# pytest-mock>=3.14.0
+# black>=24.4.2
+# ruff>=0.4.7
+# mypy>=1.10.0
+# pre-commit>=3.7.1

@@ -1,0 +1,22 @@
+# VoidRemote Code Owners
+# Each line is a file pattern followed by one or more owners.
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global owner — all files
+* @V0IDNETWORK
+
+# Core ADB layer
+/voidremote/adb/ @V0IDNETWORK
+/voidremote/core/ @V0IDNETWORK
+
+# Security-sensitive code
+/voidremote/utils/security.py @V0IDNETWORK
+/voidremote/config/ @V0IDNETWORK
+
+# CI/CD
+/.github/ @V0IDNETWORK
+
+# Documentation
+/docs/ @V0IDNETWORK
+/README.md @V0IDNETWORK
+/SECURITY.md @V0IDNETWORK

@@ -1,0 +1,121 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behavior in VoidRemote
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+        Please fill out the form below as completely as possible.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight checklist
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+        - label: I have run `voidremote doctor` and confirmed my setup is correct
+          required: true
+        - label: I am using the latest version of VoidRemote
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: VoidRemote Version
+      placeholder: "1.0.0 (run: voidremote version)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS 14 (Sonoma)
+        - macOS 13 (Ventura)
+        - macOS 12 (Monterey)
+        - Ubuntu 24.04
+        - Ubuntu 22.04
+        - Debian 12
+        - Fedora 40
+        - Other Linux
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Python Version
+      placeholder: "3.12.0 (run: python --version)"
+    validations:
+      required: true
+
+  - type: input
+    id: adb
+    attributes:
+      label: ADB Version
+      placeholder: "1.0.41 (run: adb version)"
+    validations:
+      required: false
+
+  - type: input
+    id: android
+    attributes:
+      label: Android Device & Version
+      placeholder: "e.g. Google Pixel 6 - Android 13"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: When I do X, Y happens instead of Z…
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Exact steps to reproduce the behavior.
+      placeholder: |
+        1. Run `voidremote …`
+        2. Click on '…'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs / Error Output
+      description: Run with `--debug` flag and paste relevant output here.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Screenshots, configuration snippets, or any other helpful context.
+    validations:
+      required: false
